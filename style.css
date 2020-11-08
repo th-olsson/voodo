@@ -1,0 +1,228 @@
+/* Style reset */
+*{
+  margin: 0;
+  padding: 0;
+  /* width: 100%; */
+}
+
+body{
+  width: 100%;
+}
+
+/*---Text styles---*/
+h1, h2, h3 {
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+  font-size: 1.3rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* Main header */
+.header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__h1{
+}
+
+.header__img{
+  width: 100%;
+}
+
+/* Hey guys */
+.hey-guys{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: black;
+  opacity: 0.8;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.hey-guys__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hey-guys__h2, .hey-guys__p {
+}
+
+@media (max-width: 749px){
+  .img-phone-1, .img-phone-2{
+    display: none;
+  }
+  .img{
+    height: 1h;
+  }
+}
+
+
+/* Youtubability */
+
+.youtubability__section{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2vh;
+}
+
+
+
+@media (min-width: 750px){
+  .youtubability--page-one{
+    display: flex;
+    /* flex-direction: column; */
+    padding: 5%;
+  }
+
+  .youtubability__article{
+    /* max-width: 600px; */
+  }
+
+  .youtubability__section{
+    display: flex;
+    justify-content: space-between;
+  }
+  html {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 751px){
+  .youtubability__h2{
+    text-align: center;
+  }
+  
+  .youtubability__img{
+    opacity: 0.5;
+    width: 5%;
+  }
+  video[width]{
+    width: 300px;
+  }
+}
+
+@media (min-width: 752px){
+  .livestream{
+    height: 30vh;
+  }
+  .tip-of-the-week{
+    height: 35vh;
+    padding-bottom: 7vh;
+  }
+  video[width]{
+    width: 600px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html{
+    font-size: 2rem;
+  }
+  video[width]{
+    width: 800px;
+  }
+}
+
+
+
+
+
+.youtubability--page-two{
+  display: flex;
+  flex-direction: row;
+  padding: 5%
+}
+
+.middle-text{
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Tip of the week */
+.tip-of-the-week{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  position: relative;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.tip-of-the-week__img{
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+  height: 100%;
+  z-index: -1;
+}
+
+.tip-of-the-week__article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 60%;
+}
+
+.tip-of-the-week__p{
+  text-align: center;
+}
+
+.transition{
+  /* height: 35vh; */
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.grey-background{
+  background-color: darkgrey;
+}
+
+.footer{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.livestream{
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  height: 40vh;
+}
+
+.livestream__article--left-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.livestream__article--right-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  font-style: italic;
+}
+
